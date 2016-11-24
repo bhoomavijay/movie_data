@@ -79,7 +79,7 @@ public class DetailActivity extends ActionBarActivity {
 
         private static final String LOG_TAG = DetailFragment.class.getSimpleName();
 
-        private static final String FORECAST_SHARE_HASHTAG = " #SunshineApp";
+        private static final String FORECAST_SHARE_HASHTAG = " #Movie_DB1 http://image.tmdb.org/t/p/w342//";
         private String movie_pic,movie_title,movie_overview,movie_date,movie_rating;
 
 
@@ -164,7 +164,7 @@ public class DetailActivity extends ActionBarActivity {
             shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_TEXT,
-                    movie_pic + FORECAST_SHARE_HASHTAG);
+                    FORECAST_SHARE_HASHTAG+movie_pic);
             return shareIntent;
         }
     }
